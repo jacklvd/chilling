@@ -11,10 +11,11 @@ def take_input():
     msg_0 = 'Enter an equation'
     msg_1 = "Do you even know what numbers are? Stay focused!"
     msg_2 = "Yes ... an interesting math operation. You've slept through all classes, haven't you?"
-    print(msg_0)
-    calc = input()
-    x, operator, y = calc.split(" ")
+
     while True:
+        print(msg_0)
+        calc = input()
+        x, operator, y = calc.split(" ")
         try:
             x = memory if x.lower() == "m" else float(x)
             y = memory if y.lower() == "m" else float(y)
@@ -23,10 +24,8 @@ def take_input():
                 break
             else:
                 print(msg_2)
-                break
         except ValueError:
             print(msg_1)
-            break
 
 
 def is_one_digit(n):
