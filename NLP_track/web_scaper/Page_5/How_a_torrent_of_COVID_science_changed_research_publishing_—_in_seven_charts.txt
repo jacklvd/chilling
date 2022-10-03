@@ -1,0 +1,57 @@
+The COVID-19 pandemic disrupted science in 2020 — and transformed research publishing, show data collated and analysed by Nature.Around 4% of the world’s research output was devoted to the coronavirus in 2020, according to one database. But 2020 also saw a sharp increase in articles on all subjects being submitted to scientific journals — perhaps because many researchers had to stay at home and focus on writing up papers rather than conducting science.Submissions to publisher Elsevier’s journals alone were up by around 270,000 — or 58% — between February and May when compared with the same period in 2019, one analysis found1. The increase was even higher for health and medicine titles, at a whopping 92%.The pandemic also fuelled a sharp rise in sharing through preprints (articles posted online before peer review), advanced the output of male authors over female authors and affected review times — speeding them up in some topics but slowing them down in others.COVID torrentScientists published well over 100,000 articles about the coronavirus pandemic in 2020. By one count, from the Dimensions database, they might even have passed 200,000 by early December (see ‘Coronavirus cascade’). (Estimates differ depending on search terms, database coverage and definitions of a scientific article.) More than 4% of articles listed in the Dimensions database this year are COVID-related, and around 6% of those indexed in PubMed, which mostly covers life sciences, were dedicated to the topic.
+
+
+
+
+Sources: Journal papers: Dimensions & Nature tabulations; Primer (for PubMed estimate); Preprints: Dimensions; N. Fraser & B. Kramer https://doi.org/10.6084/m9.figshare.12033672 (2020)
+
+
+From disease spread to mental healthAt first, COVID-19 papers (and preprints) focused on the spread of disease, the outcomes for people hospitalized, and diagnostics and testing, according to an analysis of the topics of PubMed-indexed articles by Primer, a company in San Francisco, California, that develops artificial-intelligence (AI) technologies. But these kinds of paper mostly plateaued after May (see ‘Coronavirus paper topics’), and there has been growing interest in mental-health research, notes Zein Tawil, a researcher at the company.
+
+
+
+
+Source: Primer
+
+
+Preprint rushMore than 30,000 of the COVID-19 articles published in 2020 were preprints — between 17% and 30% of total COVID-19 research papers (depending on database searched). And, according to Dimensions, one-tenth of all preprints this year were about COVID-19.More than half of the preprints appeared on one of three sites — medRxiv, SSRN and Research Square (see ‘Coronavirus preprints’).
+
+
+
+
+Source: Dimensions
+
+
+And more than two-thirds of all the preprints posted on medRxiv, which only launched in June last year, were about COVID-19 (see ‘MedRxiv growth’). By early December, almost one-quarter of medRxiv’s COVID-related preprints had gone on to be published in journals, says John Inglis, co-founder of medRxiv and bioRxiv and executive director of Cold Spring Harbor Laboratory Press in New York.“This has been a pivotal year for preprints,” Inglis says, especially as clinicians have become aware of medRxiv. “We anticipate more momentum for preprints across the board in 2021 as enthusiasm for early sharing gathers pace,” he says.
+
+
+
+
+Source: J. Inglis, medRxiv.
+
+
+Speedy reviewJournals rushed to get COVID-19 articles through peer review. MedRxiv COVID-19 preprints appeared in peer-reviewed journals after a median review time of 72 days, twice as fast as preprints from the server on other topics, says Inglis. He gives credit to journal editors and publishers for pushing their peer-review systems to work faster, and scientists for agreeing to review many more papers than usual.A study of 11 medical journals in the first half of the year found that they published coronavirus papers much faster than normal, but at the expense of publishing other research more slowly2 (see ‘Faster review at medical journals’).
+
+
+
+
+Source: ref. 2
+
+
+“The need for speed has put considerable pressure on typical peer-review systems that will be hard to sustain,” Inglis says. He adds that pandemic-related preprints published in the first quarter of 2020 appeared in journals more rapidly than those published later, which might be evidence of strain in the system. It’s possible, he says, that the events of this year will add momentum to new ways of conducting peer review after results have been disseminated as preprints.China surgeThe contributions that scientists made to the research effort seemed to trace the virus’s path around the world, according to one analysis of published papers3. Articles about COVID-19 with authors in China peaked early in the year (see ‘Coronavirus papers by country’). And as the virus moved to ravage Italy, the number of papers from scientists there swelled.
+
+
+
+
+Source: ref. 3
+
+
+Most-cited researchOne of the first papers about COVID-19 to appear in the literature — a 24 January publication in The Lancet about 41 people hospitalized in Wuhan, China4 — is the most cited. And the most-cited preprint5 — a 16 March report from pandemic modellers at Imperial College London that estimated how lockdown and other distancing measures could avert millions of deaths — had a significant effect on UK policy and made worldwide headlines.That preprint is also the article that attracted the most buzz on social media, according to Altmetric, a London-based firm that monitors metrics other than citations. (Second was a 2005 paper that suggested that the anti-malaria drug chloroquine inhibited the coronavirus that caused severe acute respiratory syndrome (SARS) in laboratory samples6, and a paper that argued that the coronavirus SARS-CoV-2 didn’t emerge from a laboratory was third7.)Unequal burdenThe pandemic publishing frenzy had winners and losers. Although researchers submitted more papers to journals than last year, on average, growth in submissions from female authors trailed behind growth from male authors across all subject areas, and senior women saw the largest paper penalty (see ‘Lower rates’), according to the analysis of hundreds of thousands of articles sent to Elsevier journals between February and May1.
+
+
+
+
+Source: ref. 1
+
+
+This is probably because women shouldered the burden of childcare and home-schooling during lockdowns, says Flaminio Squazzoni, a social scientist at the University of Milan, Italy, who co-authored the preprint analysis. The same effect was not seen in peer review, where men and women received and accepted invitations to evaluate papers at around the same rate.“The pandemic has given incredible opportunities for researchers but it has also been a shock to the academic system, with an explosion of publications and citations for COVID-19 papers. This is distorting the rewards of science. We need to make sure these things are taken into account when promoting and hiring in the years ahead,” says Squazzoni.COVID retractionsThere were also research-publishing scandals. Some high-profile articles on COVID-19 were retracted, including studies that relied on electronic health records from Surgisphere in Chicago, Illinois — which were thrown into doubt after the company said it wouldn’t let anyone else see the health data for auditing. In total, 15 preprints and 24 journal papers on COVID-19 had been withdrawn or retracted by December, according to the site Retraction Watch. (Five other papers have been ‘temporarily retracted’; five more have expressions of concern.) Given the volume of coronavirus research, that proportion is about the same as for research in general.It is too soon to tell whether COVID-19 papers are any more likely than others to be retracted, says Ivan Oransky, a journalist in New York City who co-founded Retraction Watch. Typically, it takes three years for editors to retract a paper, but during the pandemic it has taken just months — in part because these papers are facing so much scrutiny. “Retractions are a proxy for attention perhaps more than anything else,” says Oransky.
