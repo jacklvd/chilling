@@ -1,15 +1,14 @@
 import csv
 import sys
+from util import Node, QueueFrontier
 
-from util import Node, StackFrontier, QueueFrontier
-
-# Maps names to a set of corresponding person_ids
+# Maps names to a set of corresponding actor_ids
 names = {}
 
-# Maps person_ids to a dictionary of: name, birth, movies (a set of movie_ids)
+# Maps actor_ids to a dictionary of: name, birth, movies (a set of movie_ids)
 people = {}
 
-# Maps movie_ids to a dictionary of: title, year, stars (a set of person_ids)
+# Maps movie_ids to a dictionary of: title, year, stars (a set of actor_ids)
 movies = {}
 
 
@@ -46,8 +45,8 @@ def load_data(directory):
         reader = csv.DictReader(f)
         for row in reader:
             try:
-                people[row["person_id"]]["movies"].add(row["movie_id"])
-                movies[row["movie_id"]]["stars"].add(row["person_id"])
+                people[row["actor_id"]]["movies"].add(row["movie_id"])
+                movies[row["movie_id"]]["stars"].add(row["actor_id"])
             except KeyError:
                 pass
 
@@ -62,12 +61,12 @@ def main():
     load_data(directory)
     print("Data loaded.")
 
-    source = person_id_for_name(input("Name: "))
+    source = actor_id_for_name(input("Name: "))
     if source is None:
-        sys.exit("Person not found.")
-    target = person_id_for_name(input("Name: "))
+        sys.exit("actor not found.")
+    target = actor_id_for_name(input("Name: "))
     if target is None:
-        sys.exit("Person not found.")
+        sys.exit("actor not found.")
 
     path = shortest_path(source, target)
 
@@ -78,60 +77,85 @@ def main():
         print(f"{degrees} degrees of separation.")
         path = [(None, source)] + path
         for i in range(degrees):
-            person1 = people[path[i][1]]["name"]
-            person2 = people[path[i + 1][1]]["name"]
+            actor1 = people[path[i][1]]["name"]
+            actor2 = people[path[i + 1][1]]["name"]
             movie = movies[path[i + 1][0]]["title"]
-            print(f"{i + 1}: {person1} and {person2} starred in {movie}")
+            print(f"{i + 1}: {actor1} and {actor2} starred in {movie}")
 
 
 def shortest_path(source, target):
     """
-    Returns the shortest list of (movie_id, person_id) pairs
+    Returns the shortest list of (movie_id, actor_id) pairs
     that connect the source to the target.
 
     If no possible path, returns None.
     """
+    # TODO: Initialise a BFS, with the starting actor ID:
+    explored = set([])
+    wiki = [source]
+    dataset = {}
+    
+    while len(wiki) > 0:
+        actor = wiki.pop(0)
+        if actor == target:
+            break
+        explored.add(actor)
+        for (movie, person) in neighbors_for_actor(actor):
+            if not person in wiki and not person in explored:
+                wiki.append(person)
+                dataset[person] = (movie, actor)
+    if not target in dataset:
+        print(f'They do not have any common movies')
+        return None
+    
+    path = []
+    actor = target
+    
+    while actor != source:
+        movie, person = dataset[actor]
+        path.append((movie, actor))
+        actor = person
+        
+    path.reverse()
+    return path     
 
-    # TODO
-    raise NotImplementedError
 
-
-def person_id_for_name(name):
+def actor_id_for_name(name):
     """
-    Returns the IMDB id for a person's name,
+    Returns the IMDB id for a actor's name,
     resolving ambiguities as needed.
     """
-    person_ids = list(names.get(name.lower(), set()))
-    if len(person_ids) == 0:
+    actor_ids = list(names.get(name.lower(), set()))
+    if len(actor_ids) == 0:
         return None
-    elif len(person_ids) > 1:
+    elif len(actor_ids) > 1:
         print(f"Which '{name}'?")
-        for person_id in person_ids:
-            person = people[person_id]
-            name = person["name"]
-            birth = person["birth"]
-            print(f"ID: {person_id}, Name: {name}, Birth: {birth}")
+        for actor_id in actor_ids:
+            actor = people[actor_id]
+            name = actor["name"]
+            birth = actor["birth"]
+            print(f"ID: {actor_id}, Name: {name}, Birth: {birth}")
         try:
-            person_id = input("Intended Person ID: ")
-            if person_id in person_ids:
-                return person_id
+            actor_id = input("Intended actor ID: ")
+            if actor_id in actor_ids:
+                return actor_id
         except ValueError:
             pass
         return None
     else:
-        return person_ids[0]
+        return actor_ids[0]
 
 
-def neighbors_for_person(person_id):
+def neighbors_for_actor(actor_id):
     """
-    Returns (movie_id, person_id) pairs for people
-    who starred with a given person.
+    Returns (movie_id, actor_id) pairs for people
+    who starred with a given actor.
     """
-    movie_ids = people[person_id]["movies"]
+    movie_ids = people[actor_id]["movies"]
     neighbors = set()
     for movie_id in movie_ids:
-        for person_id in movies[movie_id]["stars"]:
-            neighbors.add((movie_id, person_id))
+        for actor_id in movies[movie_id]["stars"]:
+            neighbors.add((movie_id, actor_id))
     return neighbors
 
 
