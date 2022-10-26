@@ -9,5 +9,5 @@ In the terminal of the current directory
 
 ```
 pip install pillow
-python maze.py
+python maze.py maze2.txt
 ```
