@@ -1,5 +1,5 @@
 # Maze
-A program to apply the BFS and DFS algorithm to find a solution to get out the maze
+A program applied the BFS and DFS algorithm to find a solution to get out the maze
 
 # Sample Running
 <img src="https://github.com/jacklvd/freetime_improving/blob/master/AI_intro/search/graph/maze.png" alt="walkthrough">
