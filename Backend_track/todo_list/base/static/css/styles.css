@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Serif+Display:wght@200&family=Playfair+Display&display=swap');
+
+:root {
+    --font-family: 'Playfair Display', serif;
+    --font-text1: 'Noto Serif Display', serif;
+    --font-text2: 'Merriweather', serif;
+    --color1: #f0ead2;
+    --color2: #dde5b6;
+    --color3: #adc178;
+    --color4: #a98467;
+    --color5: #6c584c;
+    --color6: #fff3b0;
+    --color7: #84a59d;
+    --color8: #e09f3e;
+}
+
+body {
+    background-color: var(--color1);
+    font-family: var(--font-family);
+    padding-top: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-text2);
+}
+
+a, p {
+    color: var(--color5);
+    text-decoration: none;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: var(--color2);
+    -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+    box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color2);
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    background: linear-gradient(90deg, var(--color4) 0%, var(--color5) 43%, var(--color2) 100%);
+}
+
+.header-bar a {
+    color: var(--color5);
+}
+
+.header-bar a:hover {
+    color: var(--color1);
+}
+
+.task-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--color2);
+    border-top: 1px solid rgb(199, 190, 190);
+}
+
+.task-title a {
+    color: #6c584c;
+    margin-left: 25px;
+}
+
+.task-incomplete-icon {
+    height: 20px;
+    width: 20px;
+    background-color: var(--color1);
+    border-radius: 50%;
+}
+
+.task-complete-icon {
+    height: 20px;
+    width: 20px;
+    background-color: var(--color7);
+    border-radius: 50%;
+}
+
+.delete-link {
+    font-weight: 900;
+    color: #333;
+    font-size: 22px;
+    line-height: 0;
+}
+
+#search-add-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#add-link {
+    color: var(--color8);
+    font-size: 22px;
+    font-weight: 900;
+    text-shadow: 1px 1px var(--color2);
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    border: 1px solid var(--color5);
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+}
+
+label {
+    padding-top: 10px !important;
+    display: block;
+}
+
+.btn {
+    border: 1px solid var(--color5);
+    background-color: var(--color6);
+    color: var(--color4);
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-body {
+    padding: 20px;
+}
