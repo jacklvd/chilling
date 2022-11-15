@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Serif+Display:wght@200&family=Playfair+Display&display=swap');
+
+:root {
+    --font-family: "Open Sans", sans-serif;
+    --custom-font1: 'Playfair Display', serif;
+    --custom-font2: 'Merriweather', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none !important;
+    list-style: none;
+    /* justify-content: center; */
+}
+
+body {
+    background: url(world.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+
+.title {
+    margin-top: 1.25em;
+    margin-bottom: 1em;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--custom-font2);
+    font-size: 50px;
+}
+
+.wrapper {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-flow: wrap row;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flip-card-wrapper {
+    font-family: 'Comfortaa', cursive;
+    color: coral;
+    width: 180px;
+    height: 180px;
+    margin: 5px;
+    background-color: #f9efe5;
+    text-align: center;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    padding: 70px 0;
+}
+
+/*.box-wrap {*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    border: 2px solid gray;*/
+/*    background-color: antiquewhite;*/
+/*    border-radius: 20px;*/
+/*    margin: 3px 0;*/
+/*    text-align: center;*/
+/*}*/
+
+.wrapper .flip-card-wrapper p {
+    font-family: var(--custom-font1);
+    font-weight: bold;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.front-card, .back-card {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.front-card {
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back-card {
+    z-index: 1;
+    /*visibility: hidden;*/
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.flip-card-wrapper:hover {
+    transform: rotateY(180deg);
+}
