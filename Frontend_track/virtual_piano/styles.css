@@ -21,6 +21,12 @@ body {
     background-color: darkgray;
 }
 
+h1 {
+    text-align: center;
+    font-family: var(--custom-font2);
+    margin: 10em 5em;
+}
+
 .container {
     width: 30rem;
     margin: 15em auto;
