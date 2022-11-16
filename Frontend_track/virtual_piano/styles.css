@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Serif+Display:wght@200&family=Playfair+Display&display=swap');
+
+:root {
+    --font-family: "Open Sans", sans-serif;
+    --custom-font1: 'Playfair Display', serif;
+    --custom-font2: 'Merriweather', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none !important;
+    list-style: none;
+    justify-content: center;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: darkgray;
+}
+
+.container {
+    width: 30rem;
+    margin: 15em auto;
+    position: relative;
+}
+
+.white-keys{
+    display:flex;
+    justify-content:center;
+    align-content: center;
+    position: relative;
+    width: 32rem;
+}
+
+.white-keys kbd {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    display: inline-block;
+    width: 8rem;
+    height: 15rem;
+    text-align: center;
+    line-height : 24rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+}
+
+.black-keys{
+    display:flex;
+    position: absolute;
+    top: 0;
+    left: 2.8rem;
+}
+
+.black-keys kbd {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    display: inline-block;
+    width: 3.5rem;
+    height: 8.5rem;
+    text-align: center;
+    margin-right: 1rem;
+    line-height : 12rem;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 15px;
+}
+
+#except-key {
+    margin-right: 6rem;
+}
