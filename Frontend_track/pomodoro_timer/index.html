@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/c382715093.js" crossorigin="anonymous"></script>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/site.webmanifest">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <h1>pomodoro-timer</h1>
+
+            <div class="panel">
+                <p id="work">work</p>
+                <p id="break">break</p>
+            </div>
+
+            <div class="timer">
+                <div class="clock">
+                    <div class="time">
+                        <p id="minutes"></p>
+                        <p>:</p>
+                        <p id="seconds"></p>
+                    </div>
+                </div>
+            </div>
+
+            <p id="text">Session Length</p>
+
+            <div class="wrapper">
+                <span id="session-decrement">-</span>
+                <span class="num" id="session"></span>
+                <span id="session-increment">+</span>
+            </div>
+
+            <p id="text">Break Length</p>
+
+            <div class="wrapper">
+                <span id="break-decrement">-</span>
+                <span class="num" id="break-time"></span>
+                <span id="break-increment">+</span>
+            </div>
+
+            <div class="controls">
+                <button id="start" onclick="start()"><i class="fa-solid fa-play"></i></button>
+                <!-- <button id="stop" onclick="start()"><i class="fa-solid fa-stop"></i></button> -->
+                <a href="./index.html" id="reset"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SCRIPT -->
+    <script src="./src/js/app.js"></script>
+
+</body>
+
+</html>
